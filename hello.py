@@ -20,3 +20,20 @@ except:
 # Checking with hasattr
 print(hasattr("Hello", "__hash__"))  # True
 print(hasattr([2,3,4], "__hash__"))       # False
+
+#Chainmap
+print()
+print("chainmaps")
+from collections import ChainMap
+d1=dict(a=1 , b=2)
+d2=dict(a=3, b=4 , c=6)
+chain=ChainMap(d1, d2)
+print(chain)
+print(chain['c'])
+
+#Counter
+print('counter')
+import collections
+ct = collections.Counter('abracadabra')
+print(ct)
+print("most common" , ct.most_common(4))
